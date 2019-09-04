@@ -12,12 +12,6 @@
 
 </head>
 <body>
-
-         
-    <img src='https://appsflyer.zendesk.com/attachments/token/XeOCRHlj7TMAony9XCJNQ1aCa/?name=Screenshot+2019-06-28+at+12.48.11.png'>  
-      
-
-
     <div class="flex social-btns">
         <a class="app-btn blu flex vert" href='https://ih1.redbubble.net/image.378218207.6639/flat,550x550,075,f.u7.jpg' >
           <i class="fab fa-apple"></i>
@@ -35,33 +29,7 @@
         </a>
       </div>
  
-      <script>
-            window.onload = function() {
-                document.getElementsByClassName('app-btn blu flex vert')[0].setAttribute('id', 'ios_link')
-                document.getElementsByClassName('app-btn blu flex vert')[1].setAttribute('id', 'andrd_link')
-            }
-            </script>
-      <script type="text/javascript">
-        function myFunc() {
-          var url = generateUrl(true);
-    
-          // onelink is generated
-          if (url) {
-            document.getElementById('andrd_link').setAttribute('href', url);
-            document.getElementById('ios_link').setAttribute('href', url);
-          }
-    
-          //otherwise, if onelink is not generated it means that the user is redirected
-          // and the store links in the buttons stay the same
-    
-          /* for the one button solution for both Android and iOS, use the code below instead
-    
-          document.getElementById('store_link').setAttribute('href', url);
-    
-          */
-    
-        };
-      </script>
+   
 
  
 <script>//Returns the value of a parameter existing in the page's URL or ' ' if not exists.
@@ -229,5 +197,33 @@
       }
     }
     </script>
+
+<script>
+  window.onload = function() {
+      document.getElementsByClassName('app-btn blu flex vert')[0].setAttribute('id', 'ios_link')
+      document.getElementsByClassName('app-btn blu flex vert')[1].setAttribute('id', 'andrd_link')
+  }
+  </script>
+<script type="text/javascript">
+function myFunc() {
+var url = generateUrl(true);
+
+// onelink is generated
+if (url) {
+  document.getElementById('andrd_link').setAttribute('href', url);
+  document.getElementById('ios_link').setAttribute('href', url);
+}
+
+//otherwise, if onelink is not generated it means that the user is redirected
+// and the store links in the buttons stay the same
+
+/* for the one button solution for both Android and iOS, use the code below instead
+
+document.getElementById('store_link').setAttribute('href', url);
+
+*/
+
+};
+</script>
 </body>
 </html>
