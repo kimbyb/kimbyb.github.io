@@ -6,10 +6,10 @@
 //if browser is safari 
 var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification)); 
 if(isSafari) { 
-console.log('true');
+prompt('true');
 } 
 else {   
-console.log('false');
+prompt('false');
 } 
 }
 
