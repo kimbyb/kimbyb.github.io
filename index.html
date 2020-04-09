@@ -1,70 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        
-<!--         <script>
-!function(t,e,n,s,a,c,i,o,p){t.AppsFlyerSdkObject=a,t.AF=t.AF||function(){(t.AF.q=t.AF.q||[]).push([Date.now()].concat(Array.prototype.slice.call(arguments)))},t.AF.id=t.AF.id||i,t.AF.plugins={},o=e.createElement(n),p=e.getElementsByTagName(n)[0],o.async=1,o.src="https://websdk.appsflyer.com?"+(c.length>0?"st="+c.split(",").sort().join(",")+"&":"")+(i.length>0?"af_id="+i:""),p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","banners",{banners: {key: "d4d666ea-6904-4fb1-a0ea-5e99c342ca1f"}})
-AF('banners', 'showBanner')
-</script> -->
-<!-- Google Tag Manager -->
-<!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NTFK424');</script> -->
-<!-- End Google Tag Manager -->     
-        
-<!--     <script>   
-            var isMobile = {
-    Android: function() {
-        return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function() {
-        return navigator.userAgent.match(/BlackBerry/i);
-    },
-    iOS: function() {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function() {
-        return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function() {
-        return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
-    },
-    any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-    }
-};
-            
-     window.onload =  function mobile() {
-        if (isMobile.iOS() ) {
-               console.log('iOS');
-        }
-               else {
-                       !function(t,e,n,s,a,c,i,o,p){t.AppsFlyerSdkObject=a,t.AF=t.AF||function(){(t.AF.q=t.AF.q||[]).push([Date.now()].concat(Array.prototype.slice.call(arguments)))},t.AF.id=t.AF.id||i,t.AF.plugins={},o=e.createElement(n),p=e.getElementsByTagName(n)[0],o.async=1,o.src="https://websdk.appsflyer.com?"+(c.length>0?"st="+c.split(",").sort().join(",")+"&":"")+(i.length>0?"af_id="+i:""),p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","banners",{banners: {key: "0f06c0aa-44a3-4c93-8659-7c69332a0d33"}})
-AF('banners', 'showBanner')
-    console.log('hi')
-               }
-       }
-    </script> -->
-        
-        
-        
+           
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/26ecf99498.js"></script>
 
-
+<style>
+        .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .app-btn {
+    width: 45%;
+    max-width: 160px;
+    color: #fff;
+    margin: 20px 10px;
+    text-align: left;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "Lucida Grande", sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  .app-btn.blu {
+    background-color: #101010;
+    transition: background-color 0.25s linear;
+  }
+  .app-btn.blu:hover {
+    background-color: #454545;
+  }
+  .app-btn i {
+    width: 20%;
+    text-align: center;
+    font-size: 28px;
+    margin-right: 7px;
+  }
+  .app-btn .big-txt {
+    font-size: 17px;
+    text-transform: capitalize;
+  }
+  .button #eventOne{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(190, 212, 191);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+        </style>
 
 </head>
 <body>
+     
         
+       <div class="links">
+                        <a href="https://app.appsflyer.com/id1446884529" class="js-partnerKey" title="Загрузить приложение для iOS" target="”_blank”"><img src="appstore.png" class="download" alt="apple"></a>
+                        <a id="link-to-download-field" class="js-partnerKey" title="Загрузить приложение для Android" href="null"><img src="android.png" alt="android" class="download"></a>
+                    </div>
+
         <h1>  <a href='https://app.appsflyer.com/id1446884529'> click here liga 1</h1> </a>
-        <!-- Google Tag Manager (noscript) -->
-<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NTFK424"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
-<!-- End Google Tag Manager (noscript) -->
+    
     <div class="flex social-btns">
         <a class="app-btn blu flex vert" href='https://ih1.redbubble.net/image.378218207.6639/flat,550x550,075,f.u7.jpg' >
           <i class="fab fa-apple"></i>
