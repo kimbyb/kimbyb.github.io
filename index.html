@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 <script>
@@ -13,4 +13,739 @@ AF('banners', 'showBanner')
 <h1>Testing</h1>
 
 </body>
+</html>
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>FOX Bet — Legal Online Sports Betting - Download Android App</title>
+        <meta name="description" content="Download the FOX Bet Android app for legalized sports betting in Colorado, New Jersey and Pennsylvania. Download our Android app to start betting and taking advantage of daily promotions.">
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@FOXBet">
+        <meta name="twitter:title" content="FOX Bet — Download our Android App">
+        <meta name="twitter:description" content="FOX Bet is the new sports betting platform available in Colorado, New Jersey and Pennsylvania. Download our Android app to start betting and taking advantage of daily promotions.">
+        <meta name="twitter:image" content="https://cdn.foxbet.com/images/landing/Social-Banner.jpg">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://www.foxbet.com/android" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="FOX Bet — Download our Android App" />
+        <meta property="og:description" content="FOX Bet is the new sports betting platform available in Colorado, New Jersey and Pennsylvania. Download our Android app to start betting and taking advantage of daily promotions." />
+        <meta property="og:image" content="https://cdn.foxbet.com/images/landing/Social-Banner.jpg" />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="https://cdn.foxbet.com/images/landing/Logo.png" />
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap" />
+        <link rel="stylesheet" href="https://use.typekit.net/byu5owu.css" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142199483-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-142199483-1');
+            window.gtag('event', 'AndroidPageLoad', {
+                'event_category': 'PageLoad',
+                'event_label': '/android'
+            });
+        </script>
+
+        <!--Referral tracking script -->
+        <script type="text/javascript" src="https://cmsstorage.rationalcdn.com/assets/ps/assets/tracking/PstrkIdManager.js"></script>
+
+
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function(f,b,e,v,n,t,s) {if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)}; if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '2090805121031871');
+            fbq('track', 'PageView');
+        </script>
+        <noscript>
+            <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2090805121031871&ev=PageView&noscript=1" />
+        </noscript>
+        <!-- End Facebook Pixel Code -->
+
+        <!-- Snap Pixel Code -->
+        <script type='text/javascript'>
+            (function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function() {a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)}; a.queue=[];var s='script';r=t.createElement(s);r.async=!0;
+                r.src=n;var u=t.getElementsByTagName(s)[0]; u.parentNode.insertBefore(r,u);})(window,document, 'https://sc-static.net/scevent.min.js');
+            snaptr('init', 'f652175a-d722-42e1-9bb2-dc95d1500923', { 'user_email': '__INSERT_USER_EMAIL__'
+            });
+            snaptr('track', 'PAGE_VIEW');
+        </script>
+        <!-- End Snap Pixel Code -->
+
+        <!-- Twitter universal website tag code -->
+        <script>
+            !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue. push(arguments); },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.co m/uwt.js', a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+            // Insert Twitter Pixel ID and Standard Event data below
+            twq('init','o2h1n');
+            twq('track','PageView');
+        </script>
+        <!-- End Twitter universal website tag code -->
+
+
+        <style>
+            #modal-container {
+                display: none;
+            }
+            #modal-screen {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                background: rgba(10, 11, 14, 0.8);
+                height: 100vh;
+                width: 100%;
+                z-index: 10;
+                overflow-y: auto;
+            }
+            #modal-content {
+                background-color: #FFF;
+                z-index: 11;
+            }
+            #modal-title {
+                background-color: #032F57;
+                position: relative;
+                color: #FFF;
+                padding: 15px 20px 10px 20px;
+            }
+            #modal-close {
+                position: absolute;
+                top: 9px;
+                right: 20px;
+                font-size: 34px;
+            }
+            #modal-title h1 {
+                margin: 0;
+                font-size: 34px;
+                line-height: 1;
+            }
+            .step {
+                padding: 30px 30px 30px 60px;
+                position: relative;
+            }
+            .step-prompt {
+                margin: 0;
+                color: #000;
+                font-weight: 400;
+                font-size: 20px;
+            }
+            .step-number {
+                color: #AAA;
+                font-size: 30px;
+                font-weight: 600;
+                position: absolute;
+                top: 27px;
+                left: 20px;
+            }
+            body {
+                margin: 0;
+                font-family: Industry, sans-serif;
+            }
+            .footspace-0 {
+                margin-bottom: 0;
+            }
+            .headspace-0 {
+                margin-top: 0;
+            }
+            .section {
+                margin: 0 auto;
+                padding: 10px;
+                text-align: center;
+            }
+            .subtitle {
+                font-family: 'Oswald', sans-serif;
+                font-weight: 300;
+                font-size: 22px;
+                max-width: 225px;
+                height: 80px;
+                margin: 0 auto 40px auto;
+            }
+            h1 {
+                font-size: 48px;
+            }
+            h2 {
+                font-size: 32px;
+                color: #002E57;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+            #top-section {
+                background-image: url('https://cdn.foxbet.com/images/landing/Yellow-Angle-BG.png');
+                background-size: cover;
+                text-align: center;
+                background-position: center bottom;
+            }
+            #top-section .section {
+                padding: 40px;
+            }
+            #top-section h1 {
+                line-height: 1;
+                max-width: 800px;
+                margin: 10px auto;
+            }
+            #top-section p {
+                max-width: 800px;
+                margin: 0 auto;
+                font-size: 18px;
+            }
+            #fox-bet-logo {
+                width: 180px;
+            }
+            .action-buttons-container {
+                margin: 30px 0 50px 0;
+            }
+            .action-button {
+                font-size: 20px;
+                font-weight: 500;
+                font-family: 'Industry', sans-serif;
+                color: #FFF;
+                background-color: #148AFF;
+                border-radius: 5px;
+                border: none;
+                height: 50px;
+                width: 200px;
+                padding: 12px 0;
+                box-sizing: border-box;
+                text-align: center;
+                text-decoration: none;
+                position: relative;
+                display: inline-block;
+                margin: 0 10px;
+                cursor: pointer;
+                transition: background-color 250ms ease-out;
+                margin-bottom: 10px;
+            }
+            .action-button:hover {
+                background-color: #015CB8;
+            }
+            .action-button:focus, .action-button:active {
+                outline: none;
+            }
+            #steps-container {
+                margin-top: -2px;
+                background-color: #FFF;
+            }
+            .section-divider-img {
+                width: 100%;
+                display: none;
+            }
+            .step-image {
+                width: 100%;
+            }
+            .show-mobile {
+                display: none;
+            }
+            .step-container {
+                display: inline-block;
+                width: 24.5%;
+                vertical-align: top;
+            }
+
+            #footer-section {
+                background-color: #0A0A0A;
+            }
+            #footer-section .section {
+                text-align: left;
+                padding: 40px 40px 0 40px;
+            }
+            #footer-section .action-button {
+                vertical-align: top;
+                margin: 0 30px;
+                display: inline-block;
+            }
+            #footer-logo {
+                width: 70px;
+            }
+            #footer-top {
+                border-bottom: 1px solid #414141;
+                padding-bottom: 20px;
+                position: relative;
+            }
+            #footer-bottom {
+                padding: 25px 0;
+                position: relative;
+            }
+            #footer-bottom span {
+                color: #FFF;
+                font-size: 12px;
+            }
+            #social-icons {
+                position: absolute;
+                top: 15px;
+                right: 0;
+            }
+            #facebook, #twitter, #instagram {
+                text-decoration: none;
+                opacity: 1;
+                transition: opacity 250ms ease-out;
+            }
+            #twitter img, #instagram img {
+                width: 30px;
+            }
+            #facebook img {
+                width: 15px;
+            }
+            #twitter, #facebook {
+                margin-left: 20px;
+            }
+            #facebook:hover, #twitter:hover, #instagram:hover {
+                opacity: 0.8;
+            }
+
+
+            @media screen and (max-width: 1224px) {
+                #top-section h1 {
+                    font-size: 41px;
+                    max-width: 690px;
+                }
+                #top-section p {
+                    font-size: 17px;
+                    max-width: 750px;
+                }
+                #steps-container {
+                    padding: 20px 40px;
+                }
+                .subtitle {
+                    font-size: 18px;
+                    max-width: 185px;
+                    height: 60px;
+                }
+                .section {
+                    padding: 8px;
+                }
+            }
+            @media screen and (max-width: 1024px) {
+                #fox-bet-logo {
+                    width: 160px;
+                }
+                #top-section h1 {
+                    font-size: 34px;
+                    max-width: 620px;
+                }
+                #top-section p {
+                    font-size: 15px;
+                    max-width: 670px;
+                }
+                #steps-container {
+                    padding: 20px;
+                }
+                h2 {
+                    font-size: 26px;
+                }
+                .subtitle {
+                    font-size: 16px;
+                    max-width: 154px;
+                    height: 60px;
+                }
+                .action-button {
+                    font-size: 18px;
+                    height: 45px;
+                    width: 145px;
+                }
+                #footer-section .section {
+                    padding: 40px 40px 0 40px;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                h2 {
+                    font-size: 32px;
+                }
+                .section {
+                    padding: 40px;
+                }
+                .action-button {
+                    font-size: 22px;
+                    width: 300px;
+                    height: 50px;
+                    padding: 12px 0;
+                    margin-bottom: 20px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    display: block;
+                }
+                #top-section h1 {
+                    font-size: 32px;
+                    max-width: 550px;
+                }
+                #top-section p {
+                    font-size: 16px;
+                    max-width: 550px;
+                }
+                #steps-container {
+                    padding: 0;
+                }
+                .step-container {
+                    display: block;
+                    width: initial;
+                }
+                .section-divider-img {
+                    display: block;
+                }
+                .step-image {
+                    width: 450px;
+                }
+                .hide-mobile {
+                    display: none;
+                }
+                .show-mobile {
+                    display: inline;
+                }
+                #second-section .section {
+                    padding-top: 90px;
+                    padding-bottom: 120px;
+                }
+                .subtitle {
+                    font-size: 28px;
+                    height: auto;
+                    max-width: 445px;
+                    margin: 0 auto 30px auto;
+                    line-height: 1.2;
+                }
+                #footer-section .section {
+                    padding: 40px;
+                }
+                #footer-section .action-button {
+                    width: 220px;
+                    font-size: 20px;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    margin: 0;
+                    padding: 18px 0;
+                }
+                #footer-logo {
+                    width: 60px;
+                }
+                #social-icons {
+                    position: static;
+                    top: initial;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                #footer-bottom {
+                    text-align: center;
+                    padding: 20px 0 0 0;
+                }
+            }
+            @media screen and (max-width: 630px) {
+                #fox-bet-logo {
+                    width: 140px;
+                }
+                #top-section .section {
+                    padding: 30px;
+                }
+                #top-section h1 {
+                    font-size: 28px;
+                    max-width: 480px;
+                }
+                #top-section p {
+                    max-width: 480px;
+                }
+                .subtitle {
+                    font-size: 26px;
+                }
+                #second-section .section {
+                    padding-top: 80px;
+                    padding-bottom: 110px;
+                }
+                .step-number {
+                    font-size: 26px;
+                }
+                .step-prompt {
+                    font-size: 16px;
+                }
+                #modal-title h1 {
+                    font-size: 28px;
+                }
+                #modal-close {
+                    font-size: 28px;
+                }
+            }
+            @media screen and (max-width: 530px) {
+                #fox-bet-logo {
+                    width: 120px;
+                }
+                #top-section h1 {
+                    max-width: 340px;
+                }
+                #top-section p {
+                    font-size: 16px;
+                }
+                .step-image {
+                    width: 350px;
+                }
+                .action-button {
+                    font-size: 22px;
+                    width: 260px;
+                }
+                .subtitle {
+                    font-size: 24px;
+                }
+                #second-section .section {
+                    padding-top: 70px;
+                    padding-bottom: 100px;
+                }
+                #footer-section .section {
+                    padding: 30px;
+                }
+                #footer-section .action-button {
+                    width: 200px;
+                    height: 55px;
+                    font-size: 18px;
+                    padding: 17px 0;
+                }
+                .step {
+                    padding: 30px 20px 30px 50px;
+                }
+                #modal-title h1 {
+                    font-size: 26px;
+                }
+                #modal-close {
+                    font-size: 26px;
+                }
+                .step-number {
+                    font-size: 24px;
+                }
+                .step-prompt {
+                    font-size: 14px;
+                }
+            }
+            @media screen and (max-width: 425px) {
+                .section {
+                    padding: 30px;
+                }
+                #top-section .section {
+                    padding: 20px;
+                }
+                #top-section h1 {
+                    font-size: 26px;
+                    max-width: 280px;
+                }
+                #top-section p {
+                    font-size: 14px;
+                    max-width: 280px;
+                }
+                .action-button {
+                    font-size: 20px;
+                    width: 220px;
+                    padding: 12px 0;
+                }
+                .step-image {
+                    width: 260px;
+                }
+                h1 {
+                    font-size: 40px;
+                }
+                #second-section .section {
+                    padding-top: 60px;
+                    padding-bottom: 90px;
+                }
+                #second-section h2 {
+                    font-size: 24px;
+                }
+                .subtitle {
+                    font-size: 22px;
+                }
+                #footer-logo {
+                    width: 45px;
+                }
+                #footer-section .section {
+                    padding: 20px;
+                }
+                #footer-section .action-button {
+                    width: 180px;
+                    height: 50px;
+                    font-size: 16px;
+                    padding: 15px 0;
+                }
+                #modal-title {
+                    padding: 15px 20px 10px 15px;
+                }
+                #modal-title h1 {
+                    font-size: 22px;
+                }
+                #modal-close {
+                    font-size: 22px;
+                    top: 10px;
+                }
+                .step {
+                    padding: 20px 20px 20px 40px;
+                }
+                .step-number {
+                    left: 15px;
+                    top: 17px;
+                }
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="modal-container">
+            <div id="modal-screen">
+                <div id="modal-content">
+                    <div id="modal-title">
+                        <h1>STEPS TO INSTALL</h1>
+                        <span id="modal-close" onclick="closeModal()">X</span>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h2 class="step-prompt">Don't be alarmed by Google's warning message. It's because betting apps aren't allowed in the Play Store yet. It will not harm your device and is completely secure.</h2>
+                    </div>
+                    <img class="section-divider-img" src="https://cdn.foxbet.com/images/landing/android-section-divider.png" />
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h2 class="step-prompt">Once download is complete, pull down the notification panel from the top of your screen and tap FOXBET.apk to install.</h2>
+                    </div>
+                    <img class="section-divider-img" src="https://cdn.foxbet.com/images/landing/android-section-divider.png" alt="Android Install Step 2" />
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h2 class="step-prompt">After opening the installation file, you may receive a security prompt. Tap 'Settings' and turn on 'Allow from this source' or 'Unknown sources'.</h2>
+                    </div>
+                    <img class="section-divider-img" src="https://cdn.foxbet.com/images/landing/android-section-divider.png" alt="Android Install Step 2" />
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h2 class="step-prompt">If not returned to app installation automatically, tap 'Back' to complete installation and start wagering!</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="top-section">
+            <div class="section">
+                <a href="/">
+                    <img id="fox-bet-logo" src="https://cdn.foxbet.com/images/landing/LogoHorizontal.png" alt="FOX Bet logo" />
+                </a>
+                <h1>WHY DOWNLOAD FOX BET SPORTSBOOK FOR ANDROID HERE?</h1>
+                <p>Google doesn't allow sports betting apps in the Play Store yet, but you can download FOX Bet Sportsbook directly from us. Don't worry, it's completely secure and up to Google's high standards.</p>
+                <div class="action-buttons-container">
+                    <a rel="" href=" https://amaya.onelink.me/LPl3?af_ios_fallback=https://co.foxbet.com/&af_android_url=https%3A//co.foxbet.com/client/download/&af_web_dp=https%3A//co.foxbet.com&af_dp=foxbetusco:// " data-trk-conv="ClickToDownload"
+                       class="action-button generic-download" onclick="handleDownloadClick('TopSectionDownloadColorado')">COLORADO</a>
+                    <a rel="" href="https://amaya.onelink.me/TKLZ?af_ios_fallback=https://nj.foxbet.com/&af_android_url=https%3A//nj.foxbet.com/client/download/&af_web_dp=https%3A//nj.foxbet.com&af_dp=foxbetusnj://" data-trk-conv="ClickToDownload"
+                       class="action-button generic-download" onclick="handleDownloadClick('TopSectionDownloadNewJersey')">NEW JERSEY</a>
+                    <a rel="" href="https://amaya.onelink.me/IT13?af_ios_fallback=https://mtairycasino.foxbet.com/&af_android_url=https%3A//mtairycasino.foxbet.com/client/download/&af_web_dp=https%3A//mtairycasino.foxbet.com&af_dp=foxbetuspa://" data-trk-conv="ClickToDownload"
+                       class="action-button generic-download" onclick="handleDownloadClick('TopSectionDownloadPennsylvania')">PENNSYLVANIA</a>
+                    <a rel="" href="https://amaya.onelink.me/IT13?pid=Android-Page&af_web_dp=https%3A%2F%2Fmi.foxbet.com%2F&af_dp=foxbetuspa%3A%2F%2F" data-trk-conv="ClickToDownload"
+                       class="action-button generic-download" onclick="handleDownloadClick('TopSectionDownloadMichigan')" style="margin-bottom: 0;">MICHIGAN</a>
+                </div>
+            </div>
+        </div>
+        <div id="steps-container">
+            <div id="third-section" class="step-container">
+                <div class="section">
+                    <h2 class="headspace-0 footspace-0">STEP 1</h2>
+                    <h2 class="headspace-0 subtitle">Click one of the state buttons above to download.</h2>
+                    <img class="step-image hide-mobile" src="https://cdn.foxbet.com/images/landing/Android-Screen1.png" alt="FOX Bet site" />
+                    <img class="step-image show-mobile" src="https://cdn.foxbet.com/images/landing/Android-Screen1-Mobile.png" alt="FOX Bet site" />
+                </div>
+                <img class="section-divider-img" src="https://cdn.foxbet.com/images/landing/android-section-divider.png" alt="Android Install Step 2" />
+            </div>
+            <div id="fourth-section" class="step-container">
+                <div class="section">
+                    <h2 class="headspace-0 footspace-0">STEP 2</h2>
+                    <h2 class="headspace-0 subtitle">Open the notifications bar and tap the FOX bet file, then tap 'Settings'</h2>
+                    <img class="step-image desktop-img" src="https://cdn.foxbet.com/images/landing/Android-Screen2.png" />
+                </div>
+                <img class="section-divider-img" src="https://cdn.foxbet.com/images/landing/android-section-divider.png" />
+            </div>
+            <div id="fifth-section" class="step-container">
+                <div class="section">
+                    <h2 class="headspace-0 footspace-0">STEP 3</h2>
+                    <h2 class="headspace-0 subtitle">Toggle to allow from this source</h2>
+                    <img class="step-image hide-mobile" src="https://cdn.foxbet.com/images/landing/Android-Screen3.png" alt="Android Install Step 3"/>
+                    <img class="step-image show-mobile" src="https://cdn.foxbet.com/images/landing/Android-Screen3-Mobile.png" alt="Android Install Step 3"/>
+                </div>
+                <img class="section-divider-img" src="https://cdn.foxbet.com/images/landing/android-section-divider.png" />
+            </div>
+            <div id="sixth-section" class="step-container">
+                <div class="section">
+                    <h2 class="headspace-0 footspace-0">STEP 4</h2>
+                    <h2 class="headspace-0 subtitle">Tap 'Install' to install the FOX Bet app</h2>
+                    <img class="step-image" src="https://cdn.foxbet.com/images/landing/Android-Screen4.png" alt="Android Install Step 4" />
+                </div>
+            </div>
+        </div>
+        <div id="footer-section">
+            <div class="section">
+                <div id="footer-bottom">
+                    <div id="social-icons">
+                        <a id="instagram" href="https://www.instagram.com/foxbet/?hl=en" target="_blank" onclick="sendSocialGAEvent('SocialInstagram')">
+                            <img src="https://cdn.foxbet.com/images/landing/Icon-Instagram.svg" alt="Instagram" />
+                        </a>
+                        <a id="facebook" href="https://www.facebook.com/foxbet/" target="_blank" onclick="sendSocialGAEvent('SocialFacebook')">
+                            <img src="https://cdn.foxbet.com/images/landing/Icon-Facebook.svg" alt="Facebook" />
+                        </a>
+                        <a id="twitter" href="https://twitter.com/foxbet?lang=en" target="_blank" onclick="sendSocialGAEvent('SocialTwitter')">
+                            <img src="https://cdn.foxbet.com/images/landing/Icon-Twitter.svg" alt="Twitter" />
+                        </a>
+                    </div>
+                    <span id="footer-terms"></span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var isMobile = window.matchMedia('all and (max-width: 768px)').matches;
+            var modal = $('#modal-container');
+
+            function sendSocialGAEvent (label) {
+                window.gtag('event', 'SocialIconClick', {
+                    'event_category': 'Social',
+                    'event_label': label
+                });
+            }
+            function handleDownloadClick (label) {
+                fbq('trackCustom', 'InitiatedCheckout');
+                snaptr('track', 'InitiatedCheckout');
+                twq('track','InitiatedCheckout');
+
+                window.gtag('event', 'DownloadClick', {
+                    'event_category': 'DownloadAndroidAPK',
+                    'event_label': label
+                });
+
+                if (isMobile) {
+                    modal.show();
+                }
+            }
+            function closeModal () {
+                modal.hide();
+            }
+            $.ajax({
+                accepts: 'application/json',
+                contentType: 'application/json charset=utf-8',
+                method: "GET",
+                url: "https://r.foxbet.com/state"
+            }).then(function (response) {
+                window.us_state = response;
+                document.dispatchEvent(new CustomEvent('usStateReady', {'detail': response}));
+            });
+
+            $.ajax({
+                accepts: 'application/json',
+                contentType: 'application/json charset=utf-8',
+                method: 'GET',
+                url: 'https://cdn.foxbet.com/footerData.json'
+            }).then(function (response) {
+                $('#footer-terms').html(response.termsText);
+            });
+
+            // Event listener for when the state value is available.
+            document.addEventListener('usStateReady', function (e) {
+                //Here e.detail will contain the US state value (e.g. PA) for you to use
+            });
+        </script>
+    </body>
 </html>
