@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Delayed Text</title>
+  <title>Button Demo</title>
 </head>
 <body>
-	<button id="button" onclick="showDelayedText()">Click me!</button>
-	<div id="delayedText" style="display: none;">Hello</div>
-	
-	<script>
-		function showDelayedText() {
-			setTimeout(function() {
-				document.getElementById("delayedText").style.display = "block";
-			}, 5000); // 5000 milliseconds = 5 seconds
-		}
-	</script>
+  <button id="btn1">Click me!</button>
+  <button id="btn2" style="display:none;">Click me too!</button>
+
+  <script>
+    // Get a reference to the buttons
+    const btn1 = document.getElementById('btn1');
+    const btn2 = document.getElementById('btn2');
+
+    // Add an event listener to the first button
+    btn1.addEventListener('click', () => {
+      // Hide the first button
+      btn1.style.display = 'none';
+
+      // Show the second button after 5 seconds
+      setTimeout(() => {
+        btn2.style.display = 'block';
+      }, 5000);
+    });
+
+    // Add an event listener to the second button
+    btn2.addEventListener('click', () => {
+      // Hide the second button
+      btn2.style.display = 'none';
+
+      // Show the "Hello" text after 5 seconds
+      setTimeout(() => {
+        const helloText = document.createElement('p');
+        helloText.textContent = 'Hello';
+        document.body.appendChild(helloText);
+      }, 5000);
+    });
+  </script>
 </body>
 </html>
