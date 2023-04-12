@@ -4,7 +4,7 @@
   <title>Button Demo</title>
 </head>
 <body>
-  <button id="btn1">Click me!!!!!</button>
+  <button id="btn1">Click me!!!!!!!!</button>
   <button id="btn2" style="display:none;">Click me too!</button>
 
   <script>
@@ -31,6 +31,7 @@
       // Show the "Hello" text after 5 seconds
       setTimeout(() => {
         const helloText = document.createElement('p');
+        helloText.id = "hello";
         helloText.textContent = 'Hello';
         document.body.appendChild(helloText);
       }, 5000);
