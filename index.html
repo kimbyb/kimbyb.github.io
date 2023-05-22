@@ -4,38 +4,6 @@
   <title>Button Demo</title>
 </head>
 <body>
-  <button id="btn1">Click me!!!!!!!!</button>
-  <button id="btn2" style="display:none;">Click me too!</button>
-
-  <script>
-    // Get a reference to the buttons
-    const btn1 = document.getElementById('btn1');
-    const btn2 = document.getElementById('btn2');
-
-    // Add an event listener to the first button
-    btn1.addEventListener('click', () => {
-      // Hide the first button
-      btn1.style.display = 'none';
-
-      // Show the second button after 5 seconds
-      setTimeout(() => {
-        btn2.style.display = 'block';
-      }, 5000);
-    });
-
-    // Add an event listener to the second button
-    btn2.addEventListener('click', () => {
-      // Hide the second button
-      btn2.style.display = 'none';
-
-      // Show the "Hello" text after 5 seconds
-      setTimeout(() => {
-        const helloText = document.createElement('p');
-        helloText.id = "hello";
-        helloText.textContent = 'Hello';
-        document.body.appendChild(helloText);
-      }, 5000);
-    });
-  </script>
+ <label class="shop-2018-checkbox-wrap" for="delivery_giftCard"> This is a gift <input id="delivery_giftCard" name="delivery[giftCard]" type="checkbox" value="1"> <span class="shop-2018-checkmark"></span></label>
 </body>
 </html>
