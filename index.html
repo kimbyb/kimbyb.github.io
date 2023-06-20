@@ -4,31 +4,49 @@
     <title>Login Page</title>
     <script>
         function login() {
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
+            var popup = window.open("", "Login", "width=300,height=200");
 
-            if (username === "test" && password === "test") {
-                alert("Login successful!");
-                document.getElementById("main").innerHTML = "<h1>Hello</h1>";
-            } else {
-                alert("Invalid username or password.");
-            }
+            popup.document.write(`
+                <html>
+                <head>
+                    <title>Login</title>
+                </head>
+                <body>
+                    <h1>Login</h1>
+                    <form>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username">
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password">
+
+                        <button type="button" onclick="checkLogin()">Submit</button>
+                    </form>
+
+                    <script>
+                        function checkLogin() {
+                            var username = document.getElementById("username").value;
+                            var password = document.getElementById("password").value;
+
+                            if (username === "test" && password === "test") {
+                                alert("Login successful!");
+                                window.opener.document.getElementById("main").innerHTML = "<h1>Hello</h1>";
+                            } else {
+                                alert("Invalid username or password.");
+                            }
+
+                            window.close();
+                        }
+                    </script>
+                </body>
+                </html>
+            `);
         }
     </script>
 </head>
 <body>
     <h1>Login Page</h1>
-    <button onclick="document.getElementById('loginForm').style.display='block'">Login</button>
-
-    <div id="loginForm" style="display: none;">
-        <label for="username">Username:</label>
-        <input type="text" id="username">
-
-        <label for="password">Password:</label>
-        <input type="password" id="password">
-
-        <button onclick="login()">Submit</button>
-    </div>
+    <button onclick="login()">Login</button>
 
     <div id="main"></div>
 </body>
