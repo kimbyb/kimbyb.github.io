@@ -1,9 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Button Demo</title>
+    <title>Login Page</title>
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "test" && password === "test") {
+                alert("Login successful!");
+                document.getElementById("main").innerHTML = "<h1>Hello</h1>";
+            } else {
+                alert("Invalid username or password.");
+            }
+        }
+    </script>
 </head>
 <body>
- <label class="shop-2018-checkbox-wrap" for="delivery_giftCard"> This is a gift <input id="delivery_giftCard" name="delivery[giftCard]" type="checkbox" value="1"> <span class="shop-2018-checkmark"></span></label>
+    <h1>Login Page</h1>
+    <button onclick="document.getElementById('loginForm').style.display='block'">Login</button>
+
+    <div id="loginForm" style="display: none;">
+        <label for="username">Username:</label>
+        <input type="text" id="username">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+
+        <button onclick="login()">Submit</button>
+    </div>
+
+    <div id="main"></div>
 </body>
 </html>
