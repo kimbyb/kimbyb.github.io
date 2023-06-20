@@ -1,53 +1,25 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Login Page</title>
     <script>
-        function login() {
-            var popup = window.open("", "Login", "width=300,height=200");
-
-            popup.document.write(`
-                <html>
-                <head>
-                    <title>Login</title>
-                </head>
-                <body>
-                    <h1>Login</h1>
-                    <form>
-                        <label for="username">Username:</label>
-                        <input type="text" id="username">
-
-                        <label for="password">Password:</label>
-                        <input type="password" id="password">
-
-                        <button type="button" onclick="checkLogin()">Submit</button>
-                    </form>
-
-                    <script>
-                        function checkLogin() {
-                            var username = document.getElementById("username").value;
-                            var password = document.getElementById("password").value;
-
-                            if (username === "test" && password === "test") {
-                                alert("Login successful!");
-                                window.opener.document.getElementById("main").innerHTML = "<h1>Hello</h1>";
-                            } else {
-                                alert("Invalid username or password.");
-                            }
-
-                            window.close();
-                        }
-                    </script>
-                </body>
-                </html>
-            `);
-        }
+        function myFunction() {
+  var txt;
+  var person = prompt("Please enter your name:", "Harry Potter");
+  if (person == null || person == "") {
+    txt = "User cancelled the prompt.";
+  } else {
+    txt = "Hello " + person + "! How are you today?";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
     </script>
-</head>
 <body>
-    <h1>Login Page</h1>
-    <button onclick="login()">Login</button>
 
-    <div id="main"></div>
+<h2>JavaScript Prompt</h2>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
 </body>
 </html>
